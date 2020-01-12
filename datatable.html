@@ -13,13 +13,10 @@
   <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
   
   <style>
-    #testTable.dataTable tbody tr:hover {
-      background-color: #ffa;
-    }
-  
-    #testTable.dataTable tbody tr:hover > .sorting_1 {
-      background-color: #ffa;
-    }
+   /* table.dataTable td.sorting_1{ background-color: red; border:1px red; } */
+    /*table.dataTable td{ background-color: red;  border:1px red;}*/
+    table.dataTable tr.odd { background-color: red;  border:1px red;}
+    table.dataTable tr.even{ background-color: blue; border:1px red; }
   </style>
 
 
@@ -60,6 +57,14 @@
         </td>
         <td>
           3
+        </td>
+      </tr>
+      <tr>
+        <td>
+          dddd
+        </td>
+        <td>
+          4
         </td>
       </tr>
     </tbody>

@@ -100,7 +100,18 @@
 
 <script>
   // Before creating table creating random data for the table
-  $('#testTable')
+
+  var table = document.getElementById("testTable")
+
+  for(i = 0; i < 500; i++){
+    var row = table.insertRow(-1);
+
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+
+    cell1.innerHTML = Math.random().toString(36).substring(2,5); 
+    cell2.innerHTML = Math.random()*100;
+  }
 
   $(document).ready( function () {
     $('#testTable').DataTable();
